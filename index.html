@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILLOWUC</title>
+	 <script type="text/javascript">
+      var phoneWidth = parseInt(window.screen.width);
+      var phoneScale = phoneWidth / 640;
+      var ua = navigator.userAgent;
+      if (/Android (\d+\.\d+)/.test(ua)) {
+        var version = parseFloat(RegExp.$1);
+        if (version > 2.3) {
+          document.write(
+            '<meta name="viewport" content="width=640, minimum-scale = ' +
+              phoneScale +
+              ", maximum-scale = " +
+              phoneScale +
+              ', target-densitydpi=device-dpi">'
+          );
+        } else {
+          document.write(
+            '<meta name="viewport" content="width=640, target-densitydpi=device-dpi">'
+          );
+        }
+      } else {
+        document.write(
+          '<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">'
+        );
+      }
+    </script>
+	<script type="text/javascript">
+	function setStyle()
+	{
+	document.getElementById("me1").style.display="none";
+	document.getElementById("me2").style.display="none";
+	document.getElementById("me3").style.display="none";
+	document.getElementById("me4").style.display="none";
+	document.getElementById("me5").style.display="none";
+	document.getElementById("me6").style.display="none";
+	document.getElementById("me7").style.display="none";
+	document.getElementById("me8").style.display="none";
+	document.getElementById("me9").style.display="none";
+	document.getElementById("me10").style.display="none";
+	}</script>
+ <style> 
+ .btn {
+  background: #6309b8;
+  background-image: -webkit-linear-gradient(top, #6309b8, rgba(236, 111, 184, 0.682));
+  background-image: -moz-linear-gradient(top, #6309b8, rgba(236, 111, 184, 0.682));
+  background-image: -ms-linear-gradient(top, #6309b8, rgba(236, 111, 184, 0.682));
+  background-image: -o-linear-gradient(top, #6309b8, rgba(236, 111, 184, 0.682));
+  background-image: linear-gradient(to bottom, #6309b8, rgba(236, 111, 184, 0.682));
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  -webkit-box-shadow: 0px -15px 23px rgba(244, 230, 93, 0.912);
+  -moz-box-shadow: 0px -15px 23px rgba(244, 230, 93, 0.912);
+  box-shadow: 0px -15px 23px rgba(244, 230, 93, 0.912);
+  font-family: Arial;
+  color: #f2ee7e;
+  font-size: 33px;
+  padding: 23px;
+  border: solid rgba(239, 245, 229, 0.307) 0px;
+  text-decoration: none;
+ }
+ .btn:hover {
+  background: rgba(244, 64, 6, 0.472);
+  background-image: -webkit-linear-gradient(top, rgba(244, 64, 6, 0.472), rgba(46, 242, 245, 0.677));
+  background-image: -moz-linear-gradient(top, rgba(244, 64, 6, 0.472), rgba(46, 242, 245, 0.677));
+  background-image: -ms-linear-gradient(top, rgba(244, 64, 6, 0.472), rgba(46, 242, 245, 0.677));
+  background-image: -o-linear-gradient(top, rgba(244, 64, 6, 0.472), rgba(46, 242, 245, 0.677));
+  background-image: linear-gradient(to bottom, rgba(244, 64, 6, 0.472), rgba(46, 242, 245, 0.677));
+  text-decoration: none;
+ }
+ .btn2 {
+  background: rgba(17, 65, 187, 0.757);
+  background-image: -webkit-linear-gradient(top, rgba(17, 65, 187, 0.757), rgba(162, 245, 57, 0.852));
+  background-image: -moz-linear-gradient(top, rgba(17, 65, 187, 0.757), rgba(162, 245, 57, 0.852));
+  background-image: -ms-linear-gradient(top, rgba(17, 65, 187, 0.757), rgba(162, 245, 57, 0.852));
+  background-image: -o-linear-gradient(top, rgba(17, 65, 187, 0.757), rgba(162, 245, 57, 0.852));
+  background-image: linear-gradient(to bottom, rgba(17, 65, 187, 0.757), rgba(162, 245, 57, 0.852));
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  text-shadow: 0px 0px 0px #ecf146;
+  -webkit-box-shadow: 0px 10px 23px rgba(244, 236, 92, 0.912);
+  -moz-box-shadow: 0px 10px 23px rgba(244, 236, 92, 0.912);
+  box-shadow: 0px 10px 23px rgba(244, 236, 92, 0.912);
+  font-family: Arial;
+  color: #f0c20b;
+  font-size: 25px;
+  padding: 23px;
+  border: solid rgba(239, 245, 229, 0.307) 0px;
+  text-decoration: none;
+ }
+
+ .btn2:hover {
+  background: #6fefbc;
+  background-image: -webkit-linear-gradient(top, #6fefbc, #ecf146);
+  background-image: -moz-linear-gradient(top, #6fefbc, #ecf146);
+  background-image: -ms-linear-gradient(top, #6fefbc, #ecf146);
+  background-image: -o-linear-gradient(top, #6fefbc, #ecf146);
+  background-image: linear-gradient(to bottom, #6fefbc, #ecf146);
+  text-decoration: none;
+ }
+	
+ .button {
+     background-color:rgba(107, 6, 244, 0.837);
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+ }
+ .button2 {
+	 background-color: transparent; border: 0;
+ }   
+    body { 
+	 background-image: linear-gradient(#e66465, #9198e5);
+ }
+    </style>
+</head>
+
+<body> 
+    <img src="https://img.zcool.cn/community/01bd15599c606aa801201794e1fa30.jpg@1280w_1l_2o_100sh.jpg" alt="Smiley face" width="500" height="500">
+    <h1>您好，我是<b>WILLOWUC</b></h1>
+    <h3>新手村哒</h3>
+    <h2>不喝奶茶</h2>
+    <h1>爱吃西瓜</h1>
+   <button class="button2" ondblclick="alert('ジョジョ，このボタンだ')"><p style="font-size:60px">&#129322</p></button>
+   <button class="button2" onclick="alert('来个甜筒')"><p style="font-size:60px">&#x1F366</p></button>
+   <button class="button2" onclick="alert('薯条也行')"><p style="font-size:60px">&#127839</p></button>
+   <button class="button2" ondblclick="alert('Saber')"><p style="font-size:60px">🦁</p></button>	 
+<br>
+<br>
+
+   <h2>到这结束了，别点后面的按钮</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="#" class="button">再 看 一 遍</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button class="btn" ondblclick="alert('(▼へ▼メ) 不要点了...')"><p style="font-size:30px">☝🏻</p></button>
+<button class="btn2" onclick="alert('_φ_(．．)  快去学习')"><p style="font-size:50px">☝🏻</p></button>	
+<button class="btn" ondblclick="alert('┌╏ º □ º ╏┐ 你还在啊')"><p style="font-size:70px">☝🏻</p></button>	
+<button class="btn2" onclick = "window.location.href = 'https://space.bilibili.com/34786453/'" ><p style="font-size:90px">☝🏻</p></button>	
+<button class="btn" onclick="alert('(●—●) 再见不送!')"><p style="font-size:70px">☝🏻</p></button>	
+<button class="btn2" onclick="window.close()"><p style="font-size:50px">☝🏻</p></button>
+<button class="btn" ondblclick="alert('（*゜Д゜）σ 你在期待什么，不要为难新手')"><p style="font-size:30px">☝🏻</p></button>	
+<button class="btn2" onclick="alert('可以了，适可而止')"><p style="font-size:50px">☝🏻</p></button>	
+<button class="btn" ondblclick="alert('请不要每个都点，即使它们很绚烂')"><p style="font-size:70px">☝🏻</p></button>	
+<button class="btn2" onclick = "window.location.href = 'https://space.bilibili.com/34786453/'" ><p style="font-size:90px">☝🏻</p></button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button class="btn" onclick="setStyle()" id="me1"></button>
+<button class="btn2" onclick="setStyle()" id="me2"></button>
+<button class="btn" onclick="setStyle()" id="me3"></button>
+<button class="btn2" onclick="setStyle()" id="me4"></button>
+<button class="btn" onclick="setStyle()" id="me5"></button>
+<button class="btn2" ondblclick="alert('没啥好说的了，那就祝您拉屎顺畅吧！')"></button>
+<button class="btn" onclick="setStyle()" id="me6"></button>
+<button class="btn2" onclick="setStyle()" id="me7"></button>
+<button class="btn" onclick="setStyle()" id="me8"></button>
+<button class="btn2" onclick="setStyle()" id="me9"></button>
+<button class="btn" onclick="setStyle()" id="me10"></button>
+</body>
+</html>
